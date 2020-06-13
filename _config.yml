@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: Danylo Omelchenko
-logo: profile_picture.jpg
+logo: "assets/profile_picture.jpg"
+description: A virtual proof that I'm awesome
