@@ -21,21 +21,19 @@
         function loadLevel(index) {
             // read text from URL location
             const request = new XMLHttpRequest();
-            request.open('GET', `static/levels/level${index}.txt`, true);
-            request.send(null);
+
             request.onreadystatechange = function () {
-                if (request.readyState === 4 && request.status === 200) {
-                    const type = request.getResponseHeader('Content-Type');
-                    if (type.indexOf("text") !== 1) {
-                        const body = request.responseText.split('\n');
-                        const [x, y] = [body[0].length, body.length];
-                        return {
-                            size: {x, y},
-                            body
-                        }
+                if (this.readyState === 4 && this.status === 200) {
+                    const body = this.responseText.split('\n');
+                    const [x, y] = [body[0].length, body.length];
+                    return {
+                        size: {x, y},
+                        body
                     }
                 }
-            }
+            };
+            request.open('GET', `static/levels/level${index}.txt`, true);
+            request.send(null);
         }
 
         const levels = [0, 1, 2, 3, 4, 5, 6, 7].map(loadLevel);
