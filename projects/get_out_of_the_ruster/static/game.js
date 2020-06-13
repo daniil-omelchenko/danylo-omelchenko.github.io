@@ -1,5 +1,5 @@
-var levels = [];
-const levels_count = levels.length;
+let levels = [];
+let levels_count = 0;
 
 async function loadLevels(count) {
     for (let i = 0; i < count; i++) {
@@ -11,6 +11,7 @@ async function loadLevels(count) {
             size: {x, y},
             body
         });
+        levels_count = levels.length;
     }
 }
 
@@ -385,7 +386,7 @@ loadLevels(8).then(() => {
                     2000,
                     function () {
                         if (current_level >= levels_count) {
-                            window.location.href = '/';
+                            window.location.href = '';
                         }
                         game.state.start('main');
                     },
