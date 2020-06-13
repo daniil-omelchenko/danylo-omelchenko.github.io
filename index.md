@@ -1,9 +1,6 @@
 ## About me
 
-```python
-def hello():
-    print('I am an Engineer.')
-```
+I am an Engineer.
 
 
 ## My pet projects
