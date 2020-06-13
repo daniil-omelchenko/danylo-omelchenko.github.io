@@ -1,9 +1,0 @@
-xxxxxxxxxxxxxxxxxxxxxxxxxxx
-x                         x
-xo     x  x  xxx   x     ox
-x  o   x  x  x  x  x   o  x
-x      xxxx  xxx   x      x
-xx     x  x  x  x        xx
-x   x  o  x  xxx   o  x   x
-x  #  .      p      .  #  x
-xxxxxx!!!xxxxxxxxx!!!xxxxxx
