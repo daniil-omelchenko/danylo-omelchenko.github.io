@@ -1,0 +1,27 @@
+body {
+    background: black;
+}
+
+.logo {
+    width: 478px;
+    margin: 100px auto;
+}
+
+#start_button {
+    background: white;
+    color: #000;
+    width: 200px;
+    height: 60px;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 60px;
+    display: block;
+    font-family: Arial;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+#start_button:hover {
+    background: #ffd65c;
+    color: #fff;
+}

@@ -1,0 +1,9 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxx
+!                    p    x
+!     x    !!!!!   xx     x
+!     xx  !xx!xx!   xx    x
+! !   x   xxx!xxx   x     x
+! o   x    xxxxx    x     x
+!     x             x     x
+!    -                    x
+xxxxxxxxxxxxxxxxx!!xxx!!!!x
