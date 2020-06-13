@@ -17,29 +17,6 @@
     </style>
 </head>
 <body>
-    <script>
-        function loadLevel(index) {
-            // read text from URL location
-            const request = new XMLHttpRequest();
-
-            request.onreadystatechange = function () {
-                if (this.readyState === 4 && this.status === 200) {
-                    const body = this.responseText.split('\n');
-                    const [x, y] = [body[0].length, body.length];
-                    return {
-                        size: {x, y},
-                        body
-                    }
-                }
-            };
-            request.open('GET', `static/levels/level${index}.txt`, true);
-            request.send(null);
-        }
-
-        const levels = [0, 1, 2, 3, 4, 5, 6, 7].map(loadLevel);
-
-        const levels_count = levels.length;
-    </script>
     <script src="static/game.js"  type="text/javascript"> </script>
 </body>
 </html>

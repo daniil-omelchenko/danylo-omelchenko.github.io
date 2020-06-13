@@ -1,3 +1,6 @@
+var levels = [];
+const levels_count = levels.length;
+
 var current_level = 0;
 var score = 0;
 
@@ -400,6 +403,22 @@ var state = {
 };
 
 
-var game = new Phaser.Game(32 * 27, 32 * 9);
-game.state.add('main', state);
-game.state.start('main');
+async function loadLevels(count) {
+    for (let i = 0; i < count; i++) {
+        const resp = await fetch(`static/levels/level${i}.txt`);
+        const body = resp.body.split('\n');
+        const [x, y] = [body[0].length, body.length];
+        levels.push({
+            size: {x, y},
+            body
+        });
+    }
+}
+
+
+loadLevels(8).then(() => {
+        var game = new Phaser.Game(32 * 27, 32 * 9);
+        game.state.add('main', state);
+        game.state.start('main');
+    }
+);
