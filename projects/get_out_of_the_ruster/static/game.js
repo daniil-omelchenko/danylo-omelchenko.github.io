@@ -6,7 +6,7 @@ async function loadLevels(count) {
         const resp = await fetch(`static/levels/level${i}.txt`);
         const text = await resp.text();
         const body = text.split('\n');
-        const [x, y] = [body[0].length, body.length];
+        const [x, y] = [body[0].length - 1, body.length];
         levels.push({
             size: {x, y},
             body
