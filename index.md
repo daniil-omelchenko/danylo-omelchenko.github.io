@@ -2,6 +2,7 @@
 
 I am an Engineer.
 
+https://www.linkedin.com/in/danylo-omelchenko/
 
 ## My pet projects
 * [Alias UA (ios game)](/projects/alias_ua)

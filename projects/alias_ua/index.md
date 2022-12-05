@@ -1,3 +1,0 @@
-## Alias UA
-
-fun project
